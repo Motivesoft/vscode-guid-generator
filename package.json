@@ -33,14 +33,68 @@
   "contributes": {
     "commands": [
       {
-        "command": "vscode-guid-generator.insertGUID",
+        "command": "vscode-guid-generator.insert",
         "title": "Insert New GUID"
       },
       {
         "command": "vscode-guid-generator.copy",
         "title": "Copy New GUID to the Clipboard"
       }
-    ]
+    ],
+    "configuration": [
+      {
+        "title": "GUID Generator",
+        "properties": {
+          "vscode-guid-generator.contextMenu.insert": {
+            "type": "boolean",
+            "default": true,
+            "description": "Whether to show the Insert New GUID function in the editor context menu."
+          },
+          "vscode-guid-generator.uppercase": {
+            "type": "boolean",
+            "default": false,
+            "description": "Whether the hex digits in the GUID should be uppercase."
+          },
+          "vscode-guid-generator.append": {
+            "type": "string",
+            "default": "",
+            "description": "Append a string to each inserted GUID, such as a comma and/or space."
+          },
+					"vscode-guid-generator.decoration": {
+						"type": "string",
+						"default": "none",
+						"enum": [ 
+							"none", 
+							"surroundSingleQuotes", 
+							"surroundDoubleQuotes", 
+							"surroundBackTicks", 
+							"surroundCurlyBraces",
+							"surroundRoundedBraces",
+							"surroundSquareBraces"
+						],
+						"enumDescriptions": [ 
+							"No decoration around the GUID, e.g. 00000000-0000-0000-0000-000000000000", 
+							"Surround GUID with single quotes, e.g. '00000000-0000-0000-0000-000000000000'", 
+							"Surround GUID with double quotes, e.g. \"00000000-0000-0000-0000-000000000000\"", 
+							"Surround GUID with back ticks, e.g. `00000000-0000-0000-0000-000000000000`", 
+							"Surround GUID with curly braces, e.g. {00000000-0000-0000-0000-000000000000}",
+							"Surround GUID with rounded braces, e.g. (00000000-0000-0000-0000-000000000000)",
+							"Surround GUID with square braces, e.g. [00000000-0000-0000-0000-000000000000]" 
+						],
+						"description": "Choose whether the generated GUID should be wrapped in braces ([{}]) or quotes (\"'``'\")"
+					}
+        }
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "vscode-guid-generator.insert",
+          "group": "motivesoft",
+          "when": "config.vscode-guid-generator.contextMenu.insert"
+        }
+      ]
+    }
   },
   "scripts": {
     "test": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=. --extensionTestsPath=dist/web/test/suite/extensionTests.js",

@@ -2,7 +2,7 @@
   "name": "vscode-guid-generator",
   "displayName": "GUID Generator",
   "description": "An extension to generated Microsoft-style GUIDs and insert them into the editor",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "keywords": [
     "GUID",
     "UUID"
@@ -59,6 +59,11 @@
             "type": "string",
             "default": "",
             "description": "Append a string to each inserted GUID, such as a comma and/or space."
+          },
+          "vscode-guid-generator.newline": {
+            "type": "boolean",
+            "default": false,
+            "description": "Append a newline after each GUID."
           },
 					"vscode-guid-generator.decoration": {
 						"type": "string",

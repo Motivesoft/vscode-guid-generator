@@ -11,7 +11,7 @@
 ## [0.1.0]
 
 - Expanded README
-- Added [`vscode-guid-generator.newline`](#extension-settings) setting
+- Added configuration setting to automatically append a newline on each inserted GUID
 
 
 [0.1.0]: https://github.com/Motivesoft/vscode-guid-generator/releases/tag/v0.1.0

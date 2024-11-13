@@ -40,15 +40,19 @@ None at this time.
 
 ## Release Notes
 
-### 0.0.1
+### 0.1.1
 
-* Initial release
-
-### 0.0.2
-
-* Address size of package
+* Address need for VS Code restart after installation
 
 ### 0.1.0
 
 * Expanded README
 * Added [`vscode-guid-generator.newline`](#extension-settings) setting
+
+### 0.0.2
+
+* Address size of package
+
+### 0.0.1
+
+* Initial release

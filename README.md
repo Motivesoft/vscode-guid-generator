@@ -40,9 +40,11 @@ None at this time.
 
 ## Release Notes
 
-### 0.1.1
+### 1.0.0
 
 * Address need for VS Code restart after installation
+* Runs on desktop and web
+* Feature complete release
 
 ### 0.1.0
 

@@ -2,7 +2,7 @@
   "name": "vscode-guid-generator",
   "displayName": "GUID Generator",
   "description": "An extension to generated Microsoft-style GUIDs and insert them into the editor",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "keywords": [
     "GUID",
     "UUID"

@@ -1,6 +1,10 @@
 # Change Log
 
-### 1.0.0
+## [1.0.1]
+
+* Update dependencies
+
+## [1.0.0]
 
 * Address need for VS Code restart after installation
 * Runs on desktop and web
@@ -20,6 +24,7 @@
 * Initial release
 
 
+[1.0.1]: https://github.com/Motivesoft/vscode-guid-generator/releases/tag/v1.0.1
 [1.0.0]: https://github.com/Motivesoft/vscode-guid-generator/releases/tag/v1.0.0
 [0.1.0]: https://github.com/Motivesoft/vscode-guid-generator/releases/tag/v0.1.0
 [0.0.2]: https://github.com/Motivesoft/vscode-guid-generator/releases/tag/v0.0.2

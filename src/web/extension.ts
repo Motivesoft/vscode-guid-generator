@@ -15,14 +15,6 @@ const decorators = new Map<string, string>([
 
 // Called when the extension is activated; the first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
-	if (vscode.env.uiKind === vscode.UIKind.Web) {
-		console.log("'vscode-guid-generator' is active in an web extension host");
-	} else if (vscode.env.uiKind === vscode.UIKind.Desktop) {
-		console.log("'vscode-guid-generator' is active in an desktop extension host");
-	} else {
-		console.log("'vscode-guid-generator' is active in an unknown extension host");
-	}
-
 	// For each cursor in the current editor window, generate a GUID and insert it
 	// This works for a single cursor, or when in multi-cursor mode
 	context.subscriptions.push(vscode.commands.registerCommand('vscode-guid-generator.insert', () => {

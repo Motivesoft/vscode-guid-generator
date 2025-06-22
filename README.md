@@ -40,6 +40,10 @@ None at this time.
 
 ## Release Notes
 
+### 1.0.1
+
+* Update dependencies
+
 ### 1.0.0
 
 * Address need for VS Code restart after installation

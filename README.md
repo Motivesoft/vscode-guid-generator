@@ -40,6 +40,10 @@ None at this time.
 
 ## Release Notes
 
+### 1.0.2
+
+* Update dependencies
+
 ### 1.0.1
 
 * Update dependencies
